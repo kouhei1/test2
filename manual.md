@@ -13,26 +13,25 @@
 1. #### 「リモートリポジトリ」  
 	複数人で共有するための場所  
 
-## Gitのコマンド<br>
+## よく使うGitコマンド<br>
 - #### ローカルリポジトリを作成する  
 	```
 	git init  
 	#カレントディレクトリにローカルリポジトリ作成  
-	初期ブランチの名前はmain(旧:master)  
-	```<br>
-- #### リモートリポジトリ追加  
-	リモートリポジトリのurlに名前を付ける  
-	fetch pull pushなどで使うことができる  
+	#初期ブランチの名前はmain(旧:master)  
+	```
+- #### リモートリポジトリ   
+	fetch pull pushなどで使うリモートリポジトリのurlを設定する。  
 	```  
-	git remote #一覧  
+	git remote #一覧表示  
 	git remote get-url <--all:Fetch and Push/--push:Push/None:Fetch> <name> #url取得
-	git remote add <name:origin> <url>
+	git remote add <name:origin> <url> #リモートリポジトリのurlに名前を付ける
 	git remote rename <old> <new>
-	```<br>
+	```
 - #### ブランチ関連  
 	```  
-	git branch -a #ブランチ一覧  
-	git branch <name> #ブランチを作成  
+	git branch -a #ブランチ一覧表示  
+	git branch <name> #新規ブランチを作成  
 	git checkout <name> #ブランチ切り替え  
 	```  
 - #### ファイルをインデックスに登録する  
@@ -40,9 +39,9 @@
 	git add <file name> <file name> ... #インデックスへファイルを追加  
 	git add -A          #全てのファイルの変更を追加  
 	```  
-- #### ブランチの差分を確認する 前回addされてからの差分  
+- #### ブランチの差分を確認する   
 	```  
-	git diff  
+	git diff  #前回addされてからの差分
 	```  
 - #### コミットを確認する  
 	```  
