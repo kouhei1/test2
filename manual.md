@@ -32,7 +32,8 @@
 	```  
 	git branch -a #ブランチ一覧表示  
 	git branch <name> #新規ブランチを作成  
-	git checkout <name> #ブランチ切り替え  
+	git checkout <name> #ブランチ切り替え
+	git merge <name> #現在のブランチに<name>のブランチをマージする
 	```  
 - #### ファイルをインデックスに登録する  
 	```  
