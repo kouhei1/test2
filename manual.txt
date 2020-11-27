@@ -1,4 +1,42 @@
-git init #カレントディレクトリにローカルリポジトリ作成
-git add <file name> #インデックスへファイルを追加
+「ワーキングツリー」
+	作業中のファイル
 
-git add -A #全てのファイルの変更を追加
+	↓add
+
+「インデックス」
+	コミットするファイルを登録する場所
+	コミットするファイル数を決めることができる
+
+	↓commit
+
+「ローカルリポジトリ」
+	リモートリポジトリに送るためのコミットを記録する場所
+
+	↓push
+
+「リモートリポジトリ」
+	複数人で共有するための場所
+
+
+ローカルリポジトリを作成する
+git init #カレントディレクトリにローカルリポジトリ作成
+	初期ブランチの名前はmain(旧 master)
+
+ブランチ関連
+git branch -a #ブランチ一覧
+git branch <name> #ブランチを作成
+
+ファイルをインデックスに登録する
+git add <file name> <file name> #インデックスへファイルを追加
+git add -A          #全てのファイルの変更を追加
+
+
+ブランチの差分を確認する 前回addされてからの差分
+git diff
+
+コミットを確認する
+git show <hash>
+git show HEAD   #今いるブランチの最新のcommit
+git show HEAD^  #最新のcommitの１つ前
+git show HEAD^^ #最新のcommitの２つ前
+git show HEAD~2 #最新のcommitの２つ前
